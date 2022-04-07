@@ -1,0 +1,36 @@
+@import "./../../../project/styles/admin-global.module.scss";
+
+.title {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.subtitle {
+    margin-bottom: 12px;
+}
+.nameSection {
+    text-align: center;
+    width: 300px;
+    padding: 5px 10px;
+    border: 1px solid $mainAdminColor;
+    color: $colorFontAdmin;
+    font-weight: 500;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: 0.1s all linear;
+    &:hover {
+        background: $mainAdminColor;
+    }
+}
+.buttonEdit {
+    background: $mainAdminColor;
+    padding: 5px 10px;
+    font-weight: 700;
+    border: 1px solid $mainAdminColor;
+    color: $colorFontAdmin;
+    cursor: pointer;
+    transition: 0.1s all linear;
+    font-size: 16px;
+    &:hover {
+        background: transparent;
+    }
+}

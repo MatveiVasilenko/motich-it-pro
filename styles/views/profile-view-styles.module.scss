@@ -1,0 +1,711 @@
+@import './../global.module.scss';
+
+.profileContainer {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.profileTitle {
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 55px !important;
+    color: $colorGraySecond;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.profileInfoBlock {
+    width: 1700px;
+    display: flex;
+    box-shadow: 9px 9px 6px 4px rgba(255, 255, 255, 0.3);
+}
+.profileInfoFirst {
+    width: 35%;
+    background: #fff;
+}
+.profileInfoSecond {
+    width: 65%;
+    background :#F2F2F2;
+    padding: 24px 0 48px 0;
+}
+.profileImageBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.profileDataBlock {
+    margin-top: 50px;    
+    text-align: center;
+}
+
+.profileUserImage {
+    background: #E5FAFA !important;
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: $fontFamily;
+    font-size: 50px;
+    color: #009393;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+.downloadBtn {
+    background: #E5FAFA;
+    border-radius: 4px;
+    color: rgba(0, 8, 6, 0.8);
+    font-size: 26px;
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    width: 250px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: all linear 0.2s;
+    &:hover {
+        background:rgba(0, 8, 6, 0.8);
+        color:#E5FAFA;
+    }
+}
+.saveBtn {
+    background: linear-gradient(96.86deg, #0B485E 3.98%, #07BED7 35.57%, #07BED7 72.09%, #0B485E 95.77%);
+    border-radius: 4px;
+    color: white;
+    padding: 8px 10px;
+    width: 250px;
+    text-align: center;
+    font-size: 26px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-bottom: 40px;
+    transition: all linear 0.2s;
+    &:hover {
+        background: linear-gradient(96.86deg, #0B485E 14.98%, #07BED7 20.57%, #07BED7 50.09%, #0B485E 90.77%);
+        
+    }
+}
+.saveDataBtn {
+    background: linear-gradient(96.86deg, #0B485E 3.98%, #07BED7 35.57%, #07BED7 72.09%, #0B485E 95.77%);
+    border-radius: 4px;
+    color: white;
+    padding: 5px 115px;
+    font-size: 35px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 4px;
+}
+.editBtnPos {
+    text-align: right;
+    margin-right: 58px;
+}
+.editBtn {
+    background: rgba(191, 192, 214, 0.3);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 5px 95px;
+    font-size: 35px;
+    margin-top: 5px;
+    cursor: pointer;
+    color:  rgba(0, 8, 6, 0.8)
+}
+.cancelBtn {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgba(0, 8, 6, 0.6);
+    font-size: 30px;
+    margin-right: 30px;
+}
+.profileUser {
+    text-align: center;
+    color: #092E40;
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.profileLispWrap {
+    position: relative;
+}
+.profileLispSvg {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+}
+.profileLispItem {
+    background: #FFFFFF;
+    border: 3px solid #08BDD6;
+    border-radius: 4px;
+    font-size: 40px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    text-align: center;
+    width:90%;
+}
+.svgIcon {
+    width: 38px;
+    height: 42px;
+    fill: #BFC0D6;
+    stroke:  #BFC0D6;
+    margin-right: 25px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.svgIconEmail {
+    width: 38px;
+    height: 42px;
+    // fill: #BFC0D6;
+    stroke:  #BFC0D6;
+    margin-right: 25px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.payment {
+    padding: 0 24px;
+    &__noPay {
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        &__title {
+            margin-bottom: 6px;
+        }
+        &__day {
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .profileTitle {
+        font-size: 50px !important;
+        padding-top: 50px;
+    }
+    .profileInfoBlock {
+        width: 1380px;
+    }
+    .profileImageBlock {
+        margin-top: 35px;
+    }
+    .profileDataBlock {
+        margin-top: 45px;    
+    }
+    .profileUserImage {
+        width: 270px;
+        height: 270px;
+        font-size: 48px;
+    }
+    .downloadBtn {
+        font-size: 25px;
+    }
+    .saveBtn {
+        padding: 8px 77px;
+        font-size: 25px;
+    }
+    .saveDataBtn {
+        padding: 4px 115px;
+        font-size: 33px;
+    }
+    .editBtnPos {
+        text-align: right;
+        margin-right: 48px;
+    }
+    .editBtn {
+        padding: 5px 95px;
+        font-size: 33px;
+    }
+    .cancelBtn {
+        font-size: 27px;
+    }
+    .profileUser {
+        font-size: 42px;
+        margin-bottom: 28px;
+    }
+    .profileLispSvg {
+        position: absolute;
+        top: 8%;
+        left: 5%;
+    }
+    .profileLispItem {
+        font-size: 38px;
+        width: 90%;
+    }
+    .svgIcon {
+        width: 38px;
+        height: 42px;
+        fill: #BFC0D6;
+        stroke:  #BFC0D6;
+        margin-right: 25px;
+        margin-left: 15px;
+        margin-top: 8px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    
+}
+@media screen and (max-width: 1366px) {
+    .profileTitle {
+        font-size: 40px !important;
+    }
+    .profileInfoFirst {
+        width: 35%;
+        background: white;
+    }
+    .profileInfoSecond {
+        width: 65%;
+        background :#F2F2F2;
+    }
+    .profileInfoBlock {
+        width: 1000px;
+    }
+    .profileImageBlock {
+        margin-top: 30px;
+    }
+    .profileDataBlock {
+        margin-top: 40px;    
+        text-align: center;
+    }
+    .profileUserImage {
+        width: 240px;
+        height: 240px;
+        font-size: 38px;
+    }
+    .editBtnPos {
+        margin-right: 34px;
+    }
+    .downloadBtn {
+        font-size: 20px;
+        padding: 8px 10px;
+        width: 240px;
+    }
+    .saveBtn {
+        font-size: 20px;
+        padding: 8px 10px;
+        width: 240px;
+    }
+    .saveDataBtn {
+        padding: 4px 95px;
+        font-size: 25px;
+    }
+    .editBtn {
+        padding: 6px 75px;
+        font-size: 25px;
+    }
+    .cancelBtn {
+        font-size: 20px;
+    }
+    .profileUser {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+    .profileLispSvg {
+        position: absolute;
+        top: 3%;
+        left: 5%;
+    }
+    .profileLispItem {
+        font-size: 30px;
+        width: 90%;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 9px 0;
+    }
+    .svgIcon {
+        width: 33px;
+        height: 38px;
+        stroke:  #BFC0D6;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .profileTitle {
+        font-size: 40px !important;
+    }
+    .profileInfoBlock {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profileInfoFirst {
+        width: 90%;
+    }
+    .profileInfoSecond {
+        width: 90%;
+    }
+    .profileUserImage {
+        width: 250px;
+        height: 250px;
+        font-size: 40px;
+    }
+    .editBtnPos {
+        margin-right: 40px;
+    }
+    .downloadBtn {
+        font-size: 23px;
+    }
+    .saveBtn {
+        padding: 8px 71px;
+        font-size: 23px;
+    }
+    .saveDataBtn {
+        padding: 5px 95px;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .editBtn {
+        padding: 6px 75px;
+        font-size: 25px;
+        margin-bottom: 27px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .profileTitle {
+        font-size: 35px !important;
+    }
+    .profileInfoBlock {
+        width: 100%;
+    }
+    .profileInfoFirst {
+        width: 90%;
+    }
+    .profileInfoSecond {
+        width: 90%;
+    }
+    .saveDataBtn {
+        padding: 5px 95px;
+    } 
+    .profileLispItem {
+        font-size: 28px;
+        width: 500px;
+    }
+    .payment {
+        &__noPay {
+            align-items: center;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .profileTitle {
+        padding-top: 40px;
+        font-size: 35px !important;
+    }
+    .profileInfoFirst {
+        width: 95%;
+        background: white;
+    }
+    .profileInfoSecond {
+        width: 95%;
+        background :#F2F2F2;
+    }
+    .profileInfoBlock {
+        width: 100%;
+    }
+    .profileImageBlock {
+        margin-top: 30px;
+    }
+    .profileDataBlock {
+        margin-top: 20px;    
+    }
+    .profileUserImage {
+        width: 120px;
+        height: 120px;
+        font-size: 24px;
+    }
+    .editBtnPos {
+        margin-right: 0;
+        text-align: center;
+    }
+    .downloadBtn {
+        font-size: 20px;
+    }
+    .saveBtn {
+        padding: 8px 71px;
+        font-size: 20px;
+    }
+    .saveDataBtn {
+        padding: 4px 102px;
+        font-size: 25px;
+    }
+    .editBtn {
+        padding: 6px 75px;
+        font-size: 25px;
+        margin-bottom: 56px;
+    }
+    .cancelBtn {
+        font-size: 25px;
+        text-align: center;
+        padding-left: 30px;
+    }
+    .profileUser {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .profileLispWrap {
+        display: flex;
+        justify-content: center;
+    }
+    .profileLispSvg {
+        position: absolute;
+        top: 4%;
+        left: 2%;
+    }
+    .profileLispItem {
+        font-size: 18px;
+        width: 95%;
+        margin-bottom: 10px;
+        padding: 9px 0;
+    }
+    .svgIcon {
+        width: 30px;
+        height: 33px;
+        stroke:  #BFC0D6;
+        margin-right: 15px;
+        margin-left: 8px;
+        margin-top: 5px;
+    }
+    .svgIconEmail {
+        width: 30px;
+        height: 33px;
+        stroke:  #BFC0D6;
+        margin-right: 15px;
+        margin-left: 8px;
+        margin-top: 5px;
+    }
+    .profileBtns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+// .refferalHead {
+//     display: flex;
+//     align-items: center;
+//     // justify-content: space-between;
+//     color: $colorLight;
+// }
+// .refferalHeadItem {
+//     padding: 6px 12px;
+//     background: $colorLight;
+//     border-radius: 8px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-right: 50px;
+//     min-width: 220px;
+// }
+// .refferalHeadItemText {
+//     color: $colorMain;
+//     text-align: center;
+//     font-size: 22px;
+// }
+// .refferalHeadItemNumber {
+//     color: $colorTrack;
+//     // text-shadow: 0px 3px 4px rgba(118, 110, 170, 0.77);
+//     text-align: center;
+//     font-weight: 500;
+//     font-size: 40px;
+// }
+// .headItemLine {
+//     display: flex;
+//     align-items: center;
+// }
+// .refferalHeadItemTarif {
+//     padding: 6px 12px;
+//     background: $colorLight;
+//     border-radius: 8px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 0 115px 0 85px;
+// }
+// .refferalHeadItemNumberDate {
+//     color: $colorTrack;
+//     // text-shadow: 0px 3px 4px rgba(118, 110, 170, 0.77);
+//     text-align: center;
+//     font-weight: 500;
+//     font-size: 36px;
+//     margin-left: 10px;
+// }
+// .refferalHeadItemNumberTarif {
+//     color: $colorTrack;
+//     // text-shadow: 0px 3px 4px rgba(118, 110, 170, 0.77);
+//     text-align: center;
+//     font-weight: 500;
+//     font-size: 24px;
+//     margin-left: 10px;
+// }
+// //MOBILE
+// .refferalHeadMob {
+//     height: 65px;
+//     background: $backgroundMenu;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     width: calc(100% + 24px);
+//     margin-left: -12px;
+//     margin-top: -10px;
+// }
+// .refferalHeadItemMob {
+//     background: $backgroundMenuItem;
+//     border: 1px solid $colorMain;
+//     fill: $colorLight;
+//     // stroke: $colorLight;
+//     width: 20%;
+//     height: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+// }
+// .refferalHeadItemWrapperMob {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 20px;
+//     position: relative;
+//     width: 100%;
+//     text-align: center;
+
+// }
+// .refferalHeadItemSvgMob {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     transform: translateX(-50%);
+// }
+// .refferalHeadItemTextMob {
+//     font-size: 12px;
+//     color: $colorLight;
+// }
+// .refferalHeadItemTextMobSmall {
+//     font-size: 10px;
+//     color: $colorLight;
+// }
+// .refferalHeadItemNumberMob {
+//     font-size: 16px;
+//     font-weight: 700;
+//     background: linear-gradient(180deg, #FDFFA6 0%, #FF7A00 100%);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     text-align: center;
+// }
+// .refferalHeadItemNumberMobSmall {
+//     font-size: 12px;
+//     font-weight: 700;
+//     background: linear-gradient(180deg, #FDFFA6 0%, #FF7A00 100%);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     text-align: center;
+//     margin: 2px 0;
+// }
+// //Profile
+// .profileWrapper {
+//     display: flex;
+//     font-style: italic;
+//     padding: 24px 0;
+// }
+// .profileItemLeft {
+//     width: 35%;
+// }
+// .profileBtnTarif {
+//     background: $gradientThird;
+//     padding: 12px 32px;
+//     border-radius: 24px;
+//     cursor: pointer;
+//     transition: $transition;
+//     &:hover {
+//         box-shadow: $boxShadow;
+//     }
+// }
+// .profileBtnTarifUp {
+//     font-weight: 500;
+//     font-size: 32px;
+// }
+// .profileBtnTarifDown {
+//     text-align: right;
+//     font-size: 26px;
+// }
+// .profileLispWrapper {
+//     margin-top: 24px;
+// }
+
+// .profileItemCenter {
+//     width: 25%;
+//     display: flex;
+//     justify-content: center;
+// }
+// .profileImage {
+//     width: 255px;
+//     height: 255px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: $colorLight;
+//     border-radius: 50%;
+// }
+// .profileImageSvg {
+//     width: 80px;
+//     height: 80px;
+// }
+// .profileItemRight {
+//     width: 40%;
+// }
+// .profileLink {
+//     background: linear-gradient(181.21deg, rgba(14, 16, 61, 0.6) -10.46%, rgba(16, 18, 69, 0.222) 21.39%, rgba(9, 118, 133, 0.276) 73.04%, rgba(7, 156, 176, 0.42) 98.81%);
+//     border: 2px solid $colorLight;
+//     border-radius: 8px;
+//     padding: 24px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }
+// .profileLinkTitle {
+//     background: $gradientThird;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     font-size: 24px;
+// }
+// .profileLinkElem {
+//     color: $colorLight;
+//     background: transparent;
+//     font-size: 24px;
+//     width: 100%;
+//     text-align: center;
+//     border: none;
+//     outline: none;
+//     font-style: italic;
+//     margin: 20px 0;
+// }
+// .profileLinkBtn {
+//     background: $colorLight;
+//     color: $colorMain;
+//     font-size: 22px;
+//     padding: 10px 25px;
+//     border-radius: 25px;
+//     font-weight: 500;
+//     font-style: normal;
+//     cursor: pointer;
+//     transition: $transition;
+//     &:hover {
+//         box-shadow: $boxShadow;
+//     }
+// }

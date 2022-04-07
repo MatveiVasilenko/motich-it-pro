@@ -1,0 +1,67 @@
+@import './../global.module.scss';
+
+.contentHead {
+    text-align: center;
+    width: 100%;
+    padding: 16px;
+    font-size: 28px;
+    background: $gradientMain;
+    border: 1px solid $colorLight;
+}
+.contentBody {
+    max-height: 100vh;
+    overflow-y: auto;
+    position: relative;
+}
+.contentItem {
+    width: 100%;
+    background: $colorLight;
+    color: $colorMain;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 12px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 2px solid $colorLight;
+    transition: $transition;
+    position: relative;
+}
+.contentItemClosed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $colorLightDisabled;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contentItemClosedSvg {
+    margin-right: 16px;
+}
+.contentItem:hover {
+    border-color: $colorMain;
+}
+.contentItemTitle {
+    padding: 0 5px;
+}
+.contentItemWindow {
+    width: 40%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $colorLight;
+    box-shadow: $boxShadowModal;
+    color: $colorMain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover {
+        box-shadow: $boxShadow;
+    }
+}

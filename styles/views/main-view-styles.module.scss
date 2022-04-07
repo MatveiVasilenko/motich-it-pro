@@ -1,0 +1,796 @@
+@import './../global.module.scss';
+
+.refferalHead {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    color: $colorLight;
+}
+.refferalHeadItem {
+    padding: 6px 12px;
+    background: $colorLight;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    min-width: 220px;
+}
+.refferalHeadItemText {
+    color: $colorMain;
+    text-align: center;
+    font-size: 22px;
+}
+.refferalHeadItemNumber {
+    color: $colorTrack;
+    // text-shadow: 0px 3px 4px rgba(118, 110, 170, 0.77);
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+}
+.headItemLine {
+    display: flex;
+    align-items: center;
+}
+.refferalHeadItemTarif {
+    padding: 6px 12px;
+    background: $colorLight;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 115px 0 85px;
+}
+.refferalHeadItemNumberDate {
+    color: $colorTrack;
+    // text-shadow: 0px 3px 4px rgba(118, 110, 170, 0.77);
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    margin-left: 10px;
+}
+.refferalHeadItemNumberTarif {
+    color: $colorTrack;
+    // text-shadow: 0px 3px 4px rgba(118, 110, 170, 0.77);
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin-left: 10px;
+}
+//MOBILE
+.refferalHeadMob {
+    height: 65px;
+    background: $backgroundMenu;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% + 24px);
+    margin-left: -12px;
+    margin-top: -10px;
+}
+.refferalHeadItemMob {
+    background: $backgroundMenuItem;
+    border: 1px solid $colorMain;
+    fill: $colorLight;
+    // stroke: $colorLight;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.refferalHeadItemWrapperMob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+}
+.refferalHeadItemSvgMob {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-50%);
+}
+.refferalHeadItemTextMob {
+    font-size: 12px;
+    color: $colorLight;
+}
+.refferalHeadItemTextMobSmall {
+    font-size: 10px;
+    color: $colorLight;
+}
+.refferalHeadItemNumberMob {
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #FDFFA6 0%, #FF7A00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.refferalHeadItemNumberMobSmall {
+    font-size: 12px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #FDFFA6 0%, #FF7A00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 2px 0;
+}
+.mainBody {
+    width: 100%;
+    display: flex;
+    &__main {
+        display: flex;
+        align-items: center;
+        &__image {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+}
+.mainBodyImage {
+    height: 70vh;
+    width: 35%;
+    background: url('./../../project/image/office.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 16px 24px 12px 0;
+}
+.mainBodyContent {
+    width: 100%;
+}
+.mainAction {
+    margin-top: 16px;
+    padding: 30px 0;
+    font-style: italic;
+    // text-shadow: 1px 2px 4px rgba(255, 138, 0, 0.78);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    background: linear-gradient(90deg, #FFB800 0%, rgba(255, 219, 92, 0.640625) 43.83%, rgba(255, 255, 255, 0) 100%), #FFFFFF;;
+}
+.quote {
+    font-weight: 900;
+    font-style: italic;
+    color: $colorLight;
+    font-size: 44px;
+    text-align: center;
+    margin: 30px 0;
+    text-shadow: 1px 4px 4px #9E1039;
+}
+.btnQuote {
+    background: $colorLight;
+    // padding: 20px 50px;
+    height: 80px;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 40px;
+    font-style: italic;
+    width: 350px;
+    font-weight: 900;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+        box-shadow: 0 0 2px 2px rgba(255,255,255,0.2);
+    }
+}
+.btnQuoteText {
+    background: $gradientMain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // color: #0B2349;
+    display: table;
+}
+.why {
+    width: 800px;
+    color: $colorLight;
+    font-size: 26px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: $transition;
+    margin: 0 auto;
+    // text-align: center;
+}
+.whyActive {
+    opacity: 1;
+    height: fit-content;
+    overflow: visible;
+}
+.tarifBtnNot {
+    margin: 12px;
+    color: $colorSiteTitleMain;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+        color: $colorSub;
+    }
+}
+.tarifWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+// .tarifWrapperInner {
+//     width: 80%;
+//     padding-right: 24px;
+// }
+.tarifWrapperInnerRight {
+    width: 20%;
+    padding-right: 0;
+    padding-left: 24px;
+}
+.tarifWrapperBody {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 30px;
+}
+.tarifWrapperBodyPremium {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.mainTarifCard {
+    padding: 0 24px;
+    width: 275px;
+    height: 315px;
+    position: relative;
+    z-index: 0;
+    &__wrapper {
+        border-radius: 60px 0 60px 0;
+        transition: $transition;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        padding: 40px 10px 12px 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        transform: scale(1);
+        background: #fff;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        box-shadow: 0 2px 3px 3px rgba(0,0,0, 0.1);
+    }
+    &__header {
+        position: relative;
+        color: #5B5B5B;
+        font-size: 22px;
+        &__title {
+            position: absolute;
+            top: 100%;
+            left: 70%;
+            font-size: 20px;
+        }
+    }
+    &__image {
+        position: absolute;
+        top: 47%;
+        left: 10%;
+        transform: translateY(-30%);
+    }
+    &__sale {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(24px, -50%);
+        width: 125px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 12px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 22px;
+        z-index: 9;
+        &_rect {
+            position: absolute;
+            top: 55%;
+            right: 0;
+            transform: translate(11%, -9%) rotateZ(-45deg);
+            width: 100px;
+            height: 50px;
+            z-index: -9;
+        }
+    }
+    &__price {
+        position: absolute;
+        top: 35%;
+        right: 20%;
+        transform: translate(50%, -50%);
+        color: #808080;
+        text-decoration: line-through;
+    }
+    &__btn {
+        width: 180px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        padding-left: 24px;
+        transform: translateX(-24px);
+        top: 75%;
+        left: 0;
+        color: #fff;
+        font-size: 20px;
+        &_rect {
+            position: absolute;
+            top: 63%;
+            left: 3%;
+            transform: translate(10.5%, 1%) rotateZ(-45deg);
+            width: 100px;
+            height: 50px;
+            background: rgb(219, 2, 2);
+            z-index: -9;
+        }
+    }
+}
+.mainTarifCardOne {
+    // width: 100%;
+}
+.mainTarifCardSale {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    background: $colorSiteLowPrice;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    font-size: 48px;
+    margin: 25px 0;    
+}
+.mainTarifCardMounth {
+    font-family: 'Montserrat';
+}
+.mainTarifCardPrice {
+    font-family: 'Montserrat';
+    font-size: 35px;
+    text-decoration-line: line-through;
+    color: $colorSiteMaxPrice;
+}
+.mainTarifBtn {
+    box-shadow: 6px 7px 2px rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+    background: $colorLight;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: $colorSitebtnPay;
+    text-align: center;
+    font-size: 29px;
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+        color: $colorSub;
+    }
+}
+// .tarif {
+//     position: relative;
+// }
+.tarifTitle {
+    font-size: 69px;
+    margin-top: 0;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: $colorSiteTitleSub;
+}
+.tarifTitleUp {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 50px;
+    color: $colorSiteTitleMain;
+    margin-top: -85px;
+    text-align: center;
+    margin-bottom: 20px;  
+}
+.tarifTitlePremium {
+    font-weight: 700;
+    font-size: 44px;
+    text-align: center;
+    background: $gradientFour;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // color: #0B2349;
+    // display: table;
+}
+.tarifArrow {
+    margin: 10px 0 30px 0;
+}
+.mainTarifCardPremium {
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+.mainTarifCardPremiumTitle {
+    position: absolute;
+    width: 140%;
+    background: $gradientThird;
+    text-align: center;
+    padding: 15px 0;
+    transform: rotateZ(-10deg);
+    color: $colorMain;
+    font-weight: 700;
+    font-size: 32px;
+    top: 30%;
+}
+.mainTarifCardPremiumSubtitle {
+    color: $colorLight;
+    font-size: 20px;
+    font-weight: 500;
+}
+.footerContainer {
+    margin: 24px 0;
+    color: $colorLight;
+}
+.footerTitleBig {
+    font-size: 22px;
+    margin: 12px 0;
+    font-weight: 700;
+}
+.footerTitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 12px 0;
+}
+.welcome {
+    font-family: 'Montserrat';
+    color: $colorAdminMain;
+    font-weight: 500;
+    font-size: 43px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.mainTextPar {
+    font-size: 22px;
+    color: $colorAdminMain;
+    font-family: 'Montserrat';
+    margin-top: 30px;
+    text-indent: 30px;
+}
+.respect {
+    font-style: italic;
+    text-align: right;
+    color: $colorAdminMain;
+    font-size: 29px;
+    margin: 25px 0;
+}
+.mainShowWhyText {
+    margin-bottom: 12px;
+}
+.modalPay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+    background: $bgColorSiteModalPay;
+    padding: 24px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 10px rgba(0,0,0, 0.3);
+}
+.tarifSiteBlock {
+    color: $colorSiteModalPay;
+    font-size: 22px;
+    &__title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+}
+@media screen and (max-width: 1700px) {
+    .refferalHeadItem {
+        margin-right: 30px;
+    }
+    .refferalHeadItemTarif {
+        margin: 0 60px 0 40px;
+    }
+    .why {
+        width: 600px;
+        font-size: 22px;
+    }
+    .welcome {
+        font-size: 36px;
+    }
+    .mainTextPar {
+        margin-top: 26px;
+    }
+    .respect {
+        font-size: 26px;
+        margin: 22px 0;
+    }
+    .tarifTitle {
+        font-size: 60px;
+    }
+    .tarifTitleUp {
+        font-size: 43px;
+        margin-top: -75px;
+        margin-bottom: 20px;  
+    }
+    .mainTarifCard {
+        // width: 20%;
+        // width: 260px;
+        // height: 320px;
+    }
+    .mainTarifCardSale {
+        font-size: 43px;
+        margin: 25px 0;    
+    }
+    .mainTarifCardMounth {
+        font-size: 22px;
+        // margin-top: 26px;
+        
+    }
+    .mainTarifCardPrice {
+        font-size: 31px;
+    }
+    .mainTarifBtn {
+        font-size: 26px;
+    }
+}
+
+
+@media screen and (max-width: 1500px) {
+    .mainTarifCard {
+        // width: 240px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .welcome {
+        font-size: 31px;
+    }
+    .mainTextPar {
+        font-size: 22px;
+        margin-top: 26px;
+    }
+    .respect {
+        font-size: 22px;
+        margin: 22px 0;
+    }
+    .tarifTitle {
+        font-size: 50px;
+    }
+    .tarifTitleUp {
+        font-size: 35px;
+        margin-top: -60px;
+        margin-bottom: 20px;  
+    }
+    .mainTarifCard {
+        // width: 20%;
+        width: 250px;
+        height: 280px;
+        margin-left: 10px;
+        &__sale {
+            top: 50%;
+            &_rect {
+                top: 55%;
+            }
+        }
+    }
+    .mainTarifCardSale {
+        font-size: 35px;
+        margin: 25px 0;    
+    }
+    .mainTarifCardMounth {
+        font-size: 20px;
+        // margin-top: 26px;
+        
+    }
+    .mainTarifCardPrice {
+        font-size: 24px;
+    }
+    .mainTarifBtn {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .why {
+        width: 100%;
+    }
+    .mainBody {
+        flex-wrap: wrap;
+        width: 100%;
+        &__main {
+            flex-wrap: wrap;
+            // &__image {
+            //     width: 90%;
+            // }
+        }
+    }
+    .tarifWrapperBody {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .welcome {
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+    .mainTextPar {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .respect {
+        font-size: 18px;
+        margin: 22px 0;
+    }
+    .tarifTitle {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .tarifTitleUp {
+        font-size: 28px;
+        margin-top: -60px;
+        margin-bottom: 20px;  
+    }
+    .mainTarifCard {
+        // width: 20%;
+        width: 270px;
+        height: 340px;
+        margin-left: 15px;
+        margin-top: 8px;
+    }
+    .mainTarifCardSale {
+        font-size: 45px;
+        margin: 25px 0;    
+    }
+    .mainTarifCardMounth {
+        font-size: 25px;
+        // margin-top: 26px;
+    }
+    .mainTarifCardPrice {
+        font-size: 26px;
+    }
+    .mainTarifBtn {
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .mainTarifBtn {
+        font-size: 22px;
+    }
+    .modalPay {
+        padding: 12px;
+        width: 100%;
+        overflow-y: auto;
+        height: 100vh;
+        
+    }
+    .tarifSiteBlock {
+        font-size: 18px;
+        &__title {
+            font-size: 20px;
+        }
+    }
+    .mainBody {
+        flex-wrap: wrap;
+    }
+    .tarifWrapperBody {
+        flex-wrap: wrap;
+    }
+    .mainBodyImage {
+        width: 100%;
+        margin: 12px 0;
+        height: 30vh;
+    }
+    .mainBodyContent {
+        width: 100%;
+    }
+    .tarifTitle {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .tarifTitleUp {
+        margin-top: -95px;
+    }
+    .mainTarifCardMounth {
+        margin-top: 12px;
+    }
+    .mainTarifCardPrice {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    // .mainTarifBtn {
+    //     display: none;
+    // }
+    .tarifWrapper {
+        flex-wrap: wrap;
+    }
+    .tarifWrapperInner {
+        width: 100%;
+        padding-right: 0;
+
+    }
+    .tarifWrapperInnerRight {
+        width: 100%;
+    }
+    .mainTarifCardWrapper {
+        width: 100%;
+    }
+    .mainTarifCard {
+        width: 100%;
+        height: fit-content;
+        margin-left: 0;
+        &__wrapper {
+            height: 240px;
+            padding: 12px 10px;
+            margin-left: 0;
+        }
+        &__sale {
+            width: 125px;
+            height: 50px;
+            font-size: 26px;
+            right: 10px;
+            top: 54%;
+            &_rect {
+                right: 25px;
+                top: 63%;
+            }
+        }
+        &__price {
+            top: 38%;
+            right: 10%;
+        }
+        &__btn {
+            left: 10px;
+            font-size: 21px;
+            width: 190px;
+            &_rect {
+                left: 3px;
+                top: 58%;
+            }
+        }
+    }
+    .mainTarifCardSale {
+        margin: 5px 0;
+        font-size: 36px;
+    }
+    .mainAction {
+        font-size: 22px;
+        padding: 16px 0;
+    }
+    .quote {
+        font-size: 32px;
+        margin: 12px 0;
+    }
+    .btnQuote {
+        font-size: 24px;
+        height: 60px;
+    }
+    .tarifArrow {
+        display: none;
+    }
+    .mainTarifCardPremium {
+        height: 200px;
+    }
+    .tarifWrapperInnerRight {
+        padding-left: 0;
+    }
+    .mainTarifCardPremiumTitle {
+        transform: rotateZ(-11deg);
+        top: 20%;
+    }
+    .tarifTitlePremium {
+        margin-top: 12px;
+    }
+}

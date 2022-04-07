@@ -1,0 +1,32 @@
+@import "./../../../project/styles/admin-global.module.scss";
+
+.blockEnter {
+    display: flex;
+    &__title {
+        margin-bottom: 6px;
+        font-weight: 500;
+    }
+    &__btn {
+        background: $mainAdminColor;
+        color: $colorBtnAdmin;
+        outline: none;
+        padding: 5px 10px;
+        font-weight: 700;
+        border: 1px solid $mainAdminColor;
+        border-radius: 3px;
+        margin-right: 5px;
+        cursor: pointer;
+        transition: 0.1s all linear;
+        &:hover {
+          color: $mainAdminColor;
+          background: transparent;
+        }
+    }
+    &__input {
+        & input {
+            font-size: 18px;
+            padding: 4px 8px;
+            margin-right: 12px;
+        }
+    }
+}

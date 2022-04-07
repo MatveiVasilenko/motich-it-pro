@@ -1,0 +1,24 @@
+@import './../global.module.scss';
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    &_item {
+        margin-bottom: 12px;
+        font-size: 20px;
+    }
+    &__icon {
+        margin-right: 16px;
+        & svg {
+            height: 35px;
+        }
+    }
+    &__text {
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+.linkText {
+    font-weight: 500;
+}

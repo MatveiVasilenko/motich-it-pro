@@ -1,0 +1,29 @@
+@import './../global.module.scss';
+
+.wrapper {
+    background-color: $colorLight;
+    color: $colorMain;
+    font-size: 32px;
+    transition: $transition;
+    border-radius: 8px;
+    padding: 16px;
+    min-height: 100px;
+    opacity: 1;
+    margin: 16px 0;
+}
+@media screen and (max-width: 1700px) {
+    .wrapper {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 576px) {
+    .wrapper {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,394 @@
+@import './../global.module.scss';
+
+.authWrapper {
+    background: url('./../../project/image/landing.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__custom {
+        background: $bgColorLightOffice !important;
+    }
+}
+.officeSocial {
+    display: flex;
+    align-items: center;
+}
+.officeSocialItem {
+    cursor: pointer;
+}
+.officeWrapperHeader {
+    background: $headerColor;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    // color: $colorLight;
+    height: 110px;
+    font-size: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    z-index: 99999;
+    // width: 1700px;
+    // margin: 0 auto;
+    // padding-left: 175px;
+}
+.officeWrapperBody {
+    display: flex;
+    min-height: 95vh;
+}
+.officeWrapperMenu {
+    display: flex;
+    align-items: center;
+    &__profile {
+        position: relative;
+        &__item {
+            font-size: 20px;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: #A8C0C0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 36px;
+            cursor: pointer;
+            transition: $transition;
+            &:hover {
+                background: $colorGraySecond;
+            }
+        }
+        &__modal {
+            position: absolute;
+            top: 105%;
+            right: 0;
+            background: #fff;
+            padding: 6px 12px;
+            font-size: 14px;
+            color: $colorMain;
+            text-transform: uppercase;
+            z-index: 999;
+            &__item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: $transition;
+                padding: 2px 0;
+                margin-bottom: 2px;
+                cursor: pointer;
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 30px;
+                    height: 1px;
+                    background: #c4c4c4;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &:hover {
+                    color: $colorSub;
+                }
+            }
+        }
+        &__background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9;
+        }
+    }
+}
+.officeWrapperContent {
+    width: 100%;
+}
+.officeWrapperMenuItem {
+    cursor: pointer;
+    font-size: 20px;
+    transition: $transition;
+    border-bottom: 1px solid transparent;
+    color: $colorLight;
+    margin-left: 36px;
+    &:hover {
+        border-bottom: 1px solid $colorLight;
+    }
+}
+.containerOffice {
+    width: 100%;
+    padding: 24px;
+}
+.officeLogo {
+    width: $widthLogo;
+    padding: 12px;
+    & img {
+        width: 100%;
+    }
+}
+.menu {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 80px;
+}
+.menuMob {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background: $colorDark;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 999;
+}
+.menuMobItem {
+}
+.menuMobSvg {
+    background: $backgroundMenuItem;
+    border: 1px solid $colorMain;
+    fill: $colorLight;
+    stroke: $colorLight;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.officeWrapperFooter {
+    background: $colorDark;
+    padding: 16px 24px;
+}
+.officeFooterHead {
+    display: flex;
+    justify-content: space-between;
+}
+.officeFooterHeadItemLogo {
+    width: 200px;
+    text-align: center;
+    & img {
+        width: 100%;
+    }
+}
+.officeFooterBodyPay {
+    opacity: 0.8;
+    margin-top: 12px;
+}
+.officeFooterHeadItem {
+    width: 25%;
+}
+.officeFooterBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $colorLight;
+}
+.officeFooterBodyItem {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.officeFooterHeadFlex {
+    display: flex;
+    align-items: center;
+}
+.officeFooterHeadItemSvg {
+    margin-right: 10px;
+}
+//UI OFFICE
+.btn {
+    color: $colorSiteBtnMain;
+    padding: 9px 40px;
+    cursor: pointer;
+    transition: $transition;
+    background: $bgSiteBtnMain;
+    border-radius: 4px;
+    font-family: $fontFamily;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+    &:hover {
+        opacity: 0.8;
+    }
+    &_disabled {
+        background: $colorGray;
+    }
+}
+.menuBurger {
+    display: flex;
+    align-items: center;
+}
+.menuBar {
+    position: fixed;
+    z-index: 999;
+    background: $colorMain;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 55px;
+    transition: $transition;
+    padding: 12px;
+    font-size: 24px;
+    color: $colorLight;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &__item {
+        margin-bottom: 3px;
+        padding-bottom: 3px;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 1px;
+            background: #c4c4c4;
+            bottom: 0;
+            right: 0%;
+            opacity: 0.4;
+        }
+    }
+    &__profile {
+        // text-align: right;
+        &__item {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 3px;
+            padding-bottom: 3px;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 1px;
+                background: #c4c4c4;
+                bottom: 0;
+                right: 0%;
+                opacity: 0.4;
+            }
+        }
+    }
+    &__profileIcon {
+        font-size: 20px;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background: #A8C0C0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_hiddens {
+        transform: translateX(100%);
+    }
+}
+@media screen and (max-width: 1700px) {
+    .officeWrapperHeader {
+        height: 90px;
+        font-size: 48px;        
+        // padding-left: 150px;
+    }
+    .officeWrapperMenu {
+        // width: 150px;
+    }
+    // .containerOffice {
+    //     width: 1400px;
+    // }
+}
+@media screen and (max-width: 1500px) {
+    // .containerOffice {
+    //     width: 1200px;
+    // }
+}
+@media screen and (max-width: 1366px) {
+    .officeWrapperHeader {
+        font-size: 36px;
+    }
+    // .containerOffice {
+    //     width: 1000px;
+    // }
+}
+@media screen and (max-width: 768px) {
+    .officeWrapperHeader {
+        font-size: 36px;
+    }
+    .officeFooterHead {
+        display: flex;
+        justify-content: center;
+    }
+    .officeFooterHeadItem {
+        width: 270px;
+        margin: 35px 15px;
+    }
+    .btn {
+        padding: 8px 25px;
+    }
+   
+}
+@media screen and (max-width: 576px) {
+    .officeWrapperBody {
+        overflow-x: hidden;
+    }
+    .containerOffice {
+        padding: 8px 12px;
+    }
+    .officeWrapperMenu {
+        width: 0;
+    }
+    .officeWrapperMenuItem {
+        display: none;
+    }
+    .officeWrapperHeader {
+        height: 60px;
+        padding: 0 12px;
+    }
+    .officeLogo {
+        width: $widthLogoMobile;
+        padding-left: 0;
+        margin: 10px 0;
+    }
+    .officeWrapperFooter {
+        padding: 12px;
+        margin-bottom: 55px;
+    }
+    .officeFooterHead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .officeFooterBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .officeFooterHeadItem {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    .officeFooterBodyItem {
+        width: 100%;
+        align-items: center;
+    }
+    .officeFooterHeadItemLogo {
+        width: 100px;
+        & img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.start{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    &__form {
+        width: 60%;
+    }
+    &__flex{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__yetText {
+        margin-bottom: 6px;
+        font-size: 16px;
+        text-decoration: underline;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.1s all linear;
+        width: 350px;
+        margin-bottom: 12px;
+        color: $colorSiteInput;
+        opacity: 0.8;
+        &:hover {
+            color: $colorSiteFirstTitle;
+        }
+    }
+    &__intut {
+        & input{
+            font-family: $fontFamily;
+            outline: none;
+            border: none;
+            width: 460px;
+            height: 50px;
+            background: transparent;
+            font-size: 23px;
+            padding: 5px 10px 5px 50px;
+            text-align: left;
+            color: $colorSiteInput;
+            border-bottom: 1px solid $colorSiteInput;
+            margin-bottom: 12px;
+            transition: $transition;
+            &:hover {
+                border-color: $colorSiteInputHover;
+            }
+            &:focus {
+                border-color: $colorSiteInputHover;
+            }
+        }
+        &__phone {
+            position: relative;
+        }
+    }
+    &__text{
+        width: 515px;
+        font-family: $fontFamily;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFF;
+        margin-top: 22px;
+        & a{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    &__btn {
+        & button {
+            background: $bgSiteBtnMain;
+            font-family: $fontFamily;
+            border-radius: 50px;
+            font-size: 25px;
+            //   line-height: 30px;
+            border: none;
+            transition: .2s all linear;
+            color: $colorSiteBtnMain;
+            cursor: pointer;
+            padding: 15px;
+            width: 450px;
+            transition: $transition;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            &:hover {
+                box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+            }
+        }
+        & span {
+            font-size: 18px;
+            line-height: 12px;
+            font-weight: 400;
+        }
+    }
+}

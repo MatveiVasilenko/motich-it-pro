@@ -1,0 +1,146 @@
+@import './../../global.module.scss';
+
+.rating {
+    &__body {
+        display: flex;
+        &__table {
+            width: 45%;
+            padding-right: 24px;
+        }
+        &__grafic {
+            width: 30%;
+            padding-right: 24px;
+        }
+        &__invest {
+            width: 25%;
+        }
+    }
+}
+.invest {
+    background: #fff;
+    border-radius: 5px 5px 20px 20px;
+    overflow: hidden;
+    padding-top: 16px;
+    &__title {
+        font-size: 22px;
+        font-weight: 500;
+        padding: 0 16px;
+        margin-bottom: 12px;
+    }
+    &__body {
+        padding: 0 16px;
+        margin-bottom: 12px;
+        &__quote {
+            font-size: 14px;
+            margin-bottom: 12px;
+            &__text {
+                margin-bottom: 6px;
+            }
+            &__author {
+                text-align: right;
+                font-style: italic;
+            }
+        }
+    }
+    &__valut {
+        background: $bgColorLightOffice;
+        border-radius: 5px;
+        padding: 12px;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        &__icon {
+            padding-top: 2px;
+            height: 35px;
+            width: 35px;
+            margin-right: 12px;
+            & svg {
+                width: 35px;
+                height: 35px;
+            }
+        }
+        &__icon_star {
+            padding-top: 2px;
+            padding-left: 6px;
+            height: 35px;
+            width: 35px;
+            margin-right: 12px;
+            & svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        &__title {
+            font-size: 12px;
+            line-height: 1.2;
+        }
+        &__money {
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+    &__noauth {
+        background: $bgColorLightOffice;
+        border-radius: 5px;
+        padding: 12px;
+        text-align: center;
+        &__text {
+            margin-bottom: 6px;
+        }
+        &__btn {
+            color: $colorMain;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__invite {
+        padding: 12px 16px;
+        text-align: center;
+        &__text {
+            margin-bottom: 6px;
+        }
+        &__link {
+            font-weight: 500;
+            color: $colorMain;
+            transition: $transition;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.grafic {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__coming {
+        margin-bottom: 12px;
+        & svg {
+            height: 150px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .rating {
+        &__body {
+            flex-wrap: wrap;
+            &__table {
+                width: 100%;
+                padding-right: 0;
+            }
+            &__grafic {
+                width: 100%;
+                padding-right: 0;
+            }
+            &__invest {
+                width: 100%;
+            }
+        }
+    }
+}

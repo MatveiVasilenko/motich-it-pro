@@ -1,0 +1,269 @@
+@import './../global.module.scss';
+
+.contactContainer {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contactTitle {
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 55px !important;
+    color:$colorGraySecond;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.contactInfoBlock {
+    width: 1700px;
+    display: flex;
+    // align-items: center;
+    box-shadow: 9px 9px 6px 4px rgba(255, 255, 255, 0.3);
+}
+.contactInfoFirst {
+    width: 35%;
+    background: white;
+}
+.contactInfoSecond {
+    width: 65%;
+    background :#F2F2F2;
+}
+.contactInfoTitle {
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 45px;
+    color: $colorContactsTitle;
+    text-align: center;
+    margin-top: 30px;
+}
+.contactInfoFop {
+    font-family: $fontFamily;
+    font-size: 25px;
+    text-align: center;
+    color: #00557E;
+}
+.contactInfoDataBlock {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.contactInfoData {
+    background: white;
+    width: 80%;
+    height: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #195E5E;
+    font-size: 40px;
+    display: flex; 
+    align-items: center;
+    transition: $transition;
+    &:hover {
+        color: $colorSub;
+    }
+}
+.contactTeachers {
+    background: #E5FAFA;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: $fontFamily;
+    font-size: 40px;
+    color: #009393;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+.contactTeachersBlock {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+// .contactTitleBig {
+//     font-size: 22px;
+//     margin: 12px 0;
+//     font-weight: 700;
+// }
+// .contactTitle {
+//     font-size: 18px;
+//     font-weight: 500;
+//     margin: 12px 0;
+// }
+// .inputIcon {
+//     top: calc(50% - 2px);
+//     transform: translateY(-40%);
+// }
+.svgPhone {
+    width: 30px;
+    height: 33px;
+    fill: $colorMain;
+    margin-right: 25px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.svgEmail {
+    width: 30px;
+    height: 33px;
+    fill: none;
+    stroke: $colorMain;
+    margin-right: 25px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+@media screen and (max-width: 1700px) {
+    .contactInfoBlock {
+        width: 1400px;
+    }
+    .contactTitle {
+        font-size: 45px !important;
+    }
+    .contactInfoTitle {
+        font-size: 40px;
+    }
+    .contactInfoFop {
+        font-size: 20px;
+    }
+    .contactInfoData {
+        height: 70px;
+        font-size: 35px;   
+    }
+    .contactTeachers {
+        width: 150px;
+        height: 150px;
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .contactInfoBlock {
+        width: 1100px;
+    }
+    .contactTitle {
+        font-size: 30px !important;
+    }
+    .contactInfoTitle {
+        font-size: 30px;
+    }
+    .contactInfoFop {
+        font-size: 15px;
+    }
+    .contactInfoData {
+        width: 70%;
+        height: 50px;
+        font-size: 25px;   
+        margin-bottom: 15px;
+    }
+    .contactTeachers {
+        width: 110px;
+        height: 110px;
+        font-size: 22px;
+        margin: 7px 7px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .contactInfoBlock {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactInfoFirst {
+        width: 90%;
+    }
+    .contactInfoSecond {
+        width: 90%;
+    }
+    .contactInfoDataBlock {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .contactTeachersBlock {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contactInfoBlock {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactInfoFirst {
+        width: 90%;
+    }
+    .contactInfoSecond {
+        width: 90%;
+    }
+    .contactInfoTitle {
+        font-size: 35px;
+    }
+    .contactInfoFop {
+        font-size: 18px;
+    }
+    .contactInfoData {
+        width: 70%;
+        height: 50px;
+        font-size: 25px;   
+        margin-bottom: 15px;
+    }
+    .contactInfoDataBlock {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .contactTeachers {
+        width: 110px;
+        height: 110px;
+        font-size: 22px;
+        margin: 7px 7px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .contactInfoBlock {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactInfoFirst {
+        width: 100%;
+    }
+    .contactInfoSecond {
+        width: 100%;
+    }
+    .contactInfoTitle {
+        font-size: 30px;
+    }
+    .contactInfoFop {
+        font-size: 16px;
+    }
+    .contactInfoData {
+        width: 95%;
+        font-size: 19px;   
+        margin-bottom: 12px;
+    }
+    .contactInfoDataBlock {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .contactTeachers {
+        width: 110px;
+        height: 110px;
+        font-size: 22px;
+        margin: 7px 7px;
+    }
+    .svgPhone {
+        width: 25px;
+        height: 28px;
+        margin-right: 16px;
+        margin-left: 8px;
+    }
+    .svgEmail {
+        width: 25px;
+        height: 28px;
+        margin-right: 16px;
+        margin-left: 8px;
+    }
+}

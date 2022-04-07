@@ -1,0 +1,99 @@
+@import './../../global.module.scss';
+$hoverShadow: 2px 2px 4px 1px rgba(0,0,0,0.25);
+$checkBg: #fee45a;
+$readyBg: #9FE4A2;
+
+.lisp {
+    &__title {
+        font-weight: 500;
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+    &__subtitle {
+        margin-bottom: 6px;
+    }
+    &__item {
+        border: 1px solid #ccc;
+        width: fit-content;
+        padding: 8px 15px;
+        font-weight: 500;
+        color: $colorMain;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-weight: 500;
+        &:hover {
+            color: $colorSiteMain;
+            box-shadow: $hoverShadow;
+        }
+        &__title {
+            font-size: 18px;
+            background: $bottomColorMobile;
+            color: $colorBottomMenu;
+            padding: 3px 7px;
+            border-radius: 5px;
+        }
+    }
+    &__statsItem {
+        display: flex;
+        align-items: center;
+    }
+    &__stats {
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+        &__item {
+            min-width: 35px;
+            min-height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 6px;
+            &_ready {
+                background: $checkBg;
+            }
+            &_check {
+                background: $readyBg;
+            }
+        }
+        &__legend {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            margin-right: 12px;
+            &__item {
+
+            }
+        }
+    }
+    &__rating {
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        font-size: 18px;
+        & div {
+            margin-right: 2px;
+        }
+        & svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .lisp {
+        &__stats {
+            flex-wrap: wrap;
+            max-width: 35px;
+            &_mobile {
+                flex-wrap: nowrap;
+                max-width: 100%;
+            }
+            &__item {
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+.for_whom{
+    font-size: 22px;
+    line-height: 33px;
+    text-align: justify;
+    position: relative;
+    z-index: 1;
+    &__body{
+      // display: flex;
+      max-height: auto;
+      padding: 30px 0 50px 0;
+    }
+    
+    &__item{
+    //   width: 259px;
+      padding-top: 40px;
+      height: 323.2px;
+      background: #fff;
+      border-radius: 10px;
+      margin: 12px;
+      box-shadow: 8px 8px 10px -2px rgba(34, 60, 80, 0.23);
+      &__text {
+        margin: 25px 12px 0 12px;
+        text-align: center;
+      }
+    } 
+  }

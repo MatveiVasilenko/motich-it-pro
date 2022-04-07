@@ -1,0 +1,11 @@
+@import './../../global.module.scss';
+
+.modalChooseType {
+    min-width: 250px;
+    &__body {
+        //В UI admin
+    }
+}
+.btnWrapper {
+    margin: 0 6px;
+}

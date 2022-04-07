@@ -1,0 +1,139 @@
+.expert{
+    position: relative;
+    z-index: 1;
+    color: $colorSiteExpert;
+    &__foto{
+        position:absolute;
+        z-index: 5;
+        width: 50%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img {
+        width: $sizePhotoExpert;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        }
+    &__col{
+        padding-left: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction:column;
+        width: 50%; 
+        &__first{
+            position: absolute;
+            width: 410.06px;
+            left: 23%;
+            top: 24%;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 22px;
+            z-index: 6;
+
+        }
+        &__second{
+            position: absolute;
+            width: 410.06px;
+            left: 28%;
+            top: 40%;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 22px;
+            z-index: 6;
+        }
+        &__name{
+            width: 100%;
+            font-weight: 600;
+            font-size: 55px;
+            line-height: 67px;
+            text-align: center;
+            background: $colorSiteNameExpert;
+            -webkit-background-clip: text; /* Обрезаем фон по тексту */
+            -webkit-text-fill-color: transparent; /* Прозрачный текст */
+            margin-bottom: 30px;
+            margin-top: 25px;
+        }
+        &__properti{
+            display: flex;
+            align-items: center;
+            justify-content:start;
+            margin: 6px 0;
+            &__done{
+                margin-right: 30px;
+                width: 40px;
+                min-width: 40px;
+                & img {
+                    width: 100%;
+                }
+            }
+            &__text{
+                font-size: 28px;
+            }
+        }
+        &__row{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            &__projects{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            &__item{
+                margin:30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                z-index: 99;
+                &__title{
+                font-weight: 500;
+                font-size: 40px;
+                } 
+                &__text{
+                font-weight: 400;
+                font-size: 27px;
+                    & p {
+                        margin: 0;
+                    }
+                }
+                &__flex{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                &__img{
+                    margin: 0 8px;
+                    width: 100px;
+                    & img {
+                    width: 100%;
+                    }
+                }
+                }
+            }
+        
+        }
+        &__diplom{
+            width: 100%;
+            &__img{
+            width: 100%;
+            margin: 3px;
+            & img{
+                width: 90%;
+            }
+            }
+        }
+        }
+    }
+
+}

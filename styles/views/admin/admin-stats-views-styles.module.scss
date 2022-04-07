@@ -1,0 +1,18 @@
+@import "./../../../project/styles/admin-global.module.scss";
+
+.title {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.blockStats {
+    display: flex;
+    align-items: center;
+    &__text {
+        margin-right: 16px;
+    }
+    &__number {
+        color: $colorFontAdmin;
+        font-weight: 500;
+        font-size: 22px;
+    }
+}

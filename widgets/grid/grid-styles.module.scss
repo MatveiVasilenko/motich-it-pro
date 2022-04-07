@@ -1,0 +1,124 @@
+@import "./../../styles/layouts/admin-layouts-styles.module.scss";
+$color: $mainAdminColor;
+$headColor: $headAdminColor;
+$colorHead: $colorHead;
+$fontFamily: 'Montserrat', serif;
+
+.gridWrapper {
+  width: fit-content;
+  margin: 12px 0;
+}
+.gridBody {
+  max-height: 95vh;
+  overflow: auto;
+}
+.gridHead {
+  display: flex;
+  background-color: $headColor;
+  border-radius: 5px 5px 0 0;
+  align-items: center;
+  // justify-content: space-around;
+  padding: 15px 8px;
+  width: 100%;
+}
+.gridHeadItem {
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  color: $colorHead;
+}
+.gridRow {
+  display: flex;
+  align-items: center;
+  // justify-content: space-around;
+  padding: 8px 8px;
+  border-bottom: 1px solid #ccc;
+}
+.gridRowItem {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.gridFilter {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-color: $color;
+  margin-bottom: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: $fontFamily;
+  &:hover,
+  &:focus {
+    border-color: $headColor;
+    outline: none;
+  }
+}
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  min-width: 150px;
+}
+.buttonWrapperItem {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.1s all linear;
+  color: $headColor;
+  &:hover {
+    background: #ccc;
+  }
+}
+//cells
+.gridImage {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.gridImageItem {
+  height: 100%;
+}
+.btnGroup {
+  display: flex;
+  align-items: center;
+  &__item {
+    margin: 0 4px;
+  }
+}
+.btn {
+    color: $headAdminColor;
+    padding: 5px 10px;
+    border: 1px solid $mainAdminColor;
+    background: $mainAdminColor;
+    border-radius: 5px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: $fontFamily;
+    &:hover {
+        box-shadow: 0 2px 5px 1px rgba(0,0,0,0.25);
+        transition: $transition;
+    }
+}
+.title {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 576px) {
+    .gridHeadItem {
+      font-size: 14px;
+    }
+}

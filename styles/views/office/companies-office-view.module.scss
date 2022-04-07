@@ -1,0 +1,41 @@
+@import './../../global.module.scss';
+
+.blockCompany {
+    margin-bottom: 16px;
+}
+.title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+.text {
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+.link {
+    & a {
+        color: $colorAdminMain;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    
+}
+@media screen and (max-width: 1366px) {
+    
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 576px) {
+    .title {
+        font-size: 24px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .text {
+        margin-bottom: 6px;
+    }
+}

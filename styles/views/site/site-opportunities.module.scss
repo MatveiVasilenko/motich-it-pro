@@ -1,0 +1,35 @@
+.opportunities{
+    position: relative;
+    z-index: 1;
+  }
+  
+  .opportunities__row{
+    display: flex;
+    text-align: center;
+  }
+  
+  .opportunities__block{
+    // padding: 40px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .opportunities__row__item{
+    padding: 25px 50px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    min-height: 250px;
+    text-align: center;
+  }
+  
+  .opportunities__row__item__img{
+    height: 100px;
+    text-align: center;
+    margin-bottom: 12px;
+    & img {
+      height: 100px;
+    }
+  }

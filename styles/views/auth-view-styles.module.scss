@@ -1,0 +1,223 @@
+@import './../global.module.scss';
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./../../project/image/site/formsImg.svg'), $globalBgColor;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-top: 60px;
+    &__login {
+        margin: 0;
+    }
+    &__window {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $globalBgColor;
+        padding: 40px 35px;
+        position: relative;
+        width: fit-content;
+    }
+    &__icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}
+.inputWrapper {
+    width: 100%;
+}
+.input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid $colorMenu;
+    border-radius: 16px;
+    font-size: 28px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 24px;
+    &:focus {
+        outline: none;
+    }
+}
+.title {
+    font-family: $fontFamily;
+    font-weight: 600;
+    font-size: 36px;
+    color: $globalColor;
+    margin-bottom: 24px;
+}
+.btn {
+    background: $bgSiteBtnMain;
+    font-family: $fontFamily;
+    border-radius: 50px;
+    font-size: 28px;
+    //   line-height: 30px;
+    border: none;
+    transition: .2s all linear;
+    color: $colorSiteBtnMain;
+    cursor: pointer;
+    padding: 12px;
+    width: 350px;
+    transition: $transition;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    &:hover {
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+    }
+}
+.btnSubSub {
+    font-family: $fontFamily;
+    font-size: 14px;
+    text-align: center;
+    color: $globalColor;
+    margin-bottom: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.btnSub {
+    font-family: $fontFamily;
+    font-size: 22px;
+    text-align: center;
+    color: #f8f8fc;
+    cursor: pointer;
+    margin-top: 5px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.politic {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    width: 450px;
+    color: $globalColor;
+    &__sprite {
+        min-width: 60px;
+        cursor: pointer;
+    }
+}
+.politicLink {
+    color: $colorMenu;
+}
+.politicError {
+    color: $colorSub;
+    margin: 5px 0;
+    text-align: center;
+}
+.forgetMessage {
+    text-align: center;
+    padding: 4px 0 12px 0;
+    color: $globalColor;
+    width: 450px;
+}
+@media screen and (max-width: 1700px) {
+    .wrapper {
+    }
+    .title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .btnSubSub {
+        font-size: 13px;
+    }
+    .btnSub {
+        font-size:18px;
+    }
+    .btn {
+        font-size: 24px;
+    }
+    .input {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .wrapper {
+        &__window {
+            
+        }
+    }
+    .title {
+        font-size: 35px;
+    }
+    .btn {
+    }
+    .btnSub {
+        margin: 3px 0;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+        &__window {
+            width: 60%;
+        }
+    }
+    .title {
+        font-size: 35px;
+    }
+    .btn {
+        font-size: 25px;
+    }
+    .politic {
+        &__sprite {
+            width: 120px;
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .wrapper {
+        background-position: right top;   
+        margin: 0;
+        &__window {
+            width: 95%;
+            padding: 90px 8px 70px 8px;
+        }
+        &__login {
+            margin: 0;
+        }
+    }
+    .title {
+        font-size: 28px;
+        margin-bottom: 6px;
+    }
+    .btn {
+        font-size: 24px;
+        padding: 12px 15px;
+        width: 80%;
+        &_register {
+            font-size: 18px;
+        }
+    }
+    .politic {
+        width: 100%;
+        &__sprite {
+            width: 130px;
+        }
+    }
+    .btnSubSub {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 1px;
+        margin-top: 6px;
+    }
+    .btnSub {
+        font-size: 18px;
+        margin: 0;
+    }
+    .forgetMessage {
+        width: 100%;
+    }
+}

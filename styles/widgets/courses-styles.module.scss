@@ -1,0 +1,173 @@
+@import './../global.module.scss';
+
+.modules {
+    display: flex;
+}
+.modulesBody {
+    width: 60%;
+}
+.modulesLisp {
+    color: $colorMain;
+    width: 40%;
+    padding-left: 24px;
+    &__head {
+        text-align: center;
+        border-bottom: 1px solid #C4C4C4;
+        font-size: 24px;
+        &__title {
+            font-weight: 500;
+            padding: 5px 0 ;
+        }
+    }
+    &__body {
+        padding: 12px;
+        max-height: 65vh;
+        overflow-y: auto;
+    }
+}
+.coursesItem {
+    display: flex;
+    align-items: center;
+    color: $colorMain;
+    cursor: pointer;
+    transition: $transition;
+    font-weight: 700;
+    margin-bottom: 12px;
+    position: relative;
+    &__back {
+        background: red;
+    }
+    &_disabled {
+        color:rgba(174, 174, 174, 1);
+    }
+    &:hover {
+        color: $colorMain
+    }    
+    &__title {
+        margin-right: 6px;
+    }
+    &__triangle {
+        margin-right: 12px;
+        &_active {
+            transform: rotateZ(90deg);
+        }
+    }
+    &__module {
+        display: flex;
+        align-items: center;
+        padding-left: 24px;
+        margin-bottom: 12px;
+        &__title {
+            margin-left: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            color: rgba(0, 85, 126, 1);
+            transition: $transition;
+            display: flex;
+            align-items: center;
+            position: relative;
+            &__item {
+                margin-right: 6px;
+            }
+            &__info {
+                position: absolute;
+                left: 20%;
+                top: 100%;
+                width: 300px;
+                background: $colorLight;
+                box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+                z-index: 99;
+                color: $colorMain;
+                padding: 6px;
+                font-weight: 400;
+                &__home {
+                    font-weight: 500;
+                    color: rgba(0, 85, 126, 1);
+                }
+            }
+            &:hover {
+                color: $colorMain
+            }
+            &_disabled {
+                color: rgba(174, 174, 174, 1);
+                font-weight: 400;
+            }
+        }
+    }
+    &__background {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+    }
+}
+.coursePreview {
+    &__img {
+        max-height: 400px;
+        overflow: hidden;
+        margin-bottom: 16px;
+        & img {
+            width: 100%;
+        }
+    }
+    &__title {
+        margin-bottom: 6px;
+        font-weight: 500;
+        color: $colorMain;
+        border-bottom: 1px solid #c4c4c4;
+        font-size: 40px;
+    }
+    &__text {
+        margin-bottom: 16px;
+    }
+    &__btn {
+        text-align: center;
+    }
+}
+.promo {
+    &__title {
+        cursor: pointer;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+    &__input {
+        padding: 5px 10px;
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .modules {
+        flex-wrap: wrap;
+    }
+    .modulesBody {
+        width: 100%;
+    }
+    .modulesLisp {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 12px;
+        &__body {
+            overflow-y: visible;
+            max-height: 100%;
+        }
+    }
+    .coursesItem {
+        &__module {
+            &__title {
+                &__info {
+                    width: 95%;
+                    left: 0;
+                }
+            }
+        }
+    }
+    .coursePreview {
+        &__title {
+            font-size: 28px;
+        }
+    }
+}

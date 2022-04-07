@@ -1,0 +1,180 @@
+@import "./../../styles/layouts/admin-layouts-styles.module.scss";
+$color: $mainAdminColor;
+$headColor: $headAdminColor;
+$colorHead: $colorHead;
+$fontFamily: 'Montserrat', serif;
+
+.paggination {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.editor {
+    padding: 12px 6px;
+    &__item {
+        margin-bottom: 12px;
+        &__title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
+            margin-top: 10px;
+        }
+        &__input {
+            & input, textarea {
+                width: 411px;
+                border-radius: 5px;
+                border-color: rgba(0, 195, 183, 0.3);
+                padding: 10px 15px;
+                outline: none;
+                &:focus {
+                    border-color: $color;
+                }
+            }
+        }
+        &__textArea {
+            & input, textarea {
+                width: 411px;
+                height: 100px;
+                border-radius: 5px;
+                border-color: rgba(0, 195, 183, 0.3);
+                outline: none;
+                font-size: 15px;
+                &:focus {
+                    border-color: $color;
+                }
+            }
+        }
+        &__select {
+            border-radius: 5px;
+            border: 1px solid $color;
+            padding: 5px 15px;
+            // margin: 0 15px;
+        }
+        &__image {
+            display: flex;
+            &__img {
+                width: 250px;
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__wrapper__button {
+        margin: 10px 0;
+        text-align: center;
+    }
+    &__button {
+        color: $headAdminColor;
+        padding: 5px 10px;
+        border: 1px solid $mainAdminColor;
+        background: $mainAdminColor;
+        border-radius: 5px;
+        margin-bottom: 6px;
+        cursor: pointer;
+        font-weight: 500;
+        font-family: $fontFamily;
+        width: fit-content;
+        &:hover {
+            box-shadow: 0 2px 5px 1px rgba(0,0,0,0.25);
+            transition: $transition;
+        }
+        &_big {
+            font-size: 18px;
+        }
+    }
+    &__select {
+        color: $headAdminColor;
+        border: 1px solid $mainAdminColor;
+        font-size: 14px;
+        padding: 3px 5px;
+        font-family: $fontFamily;
+        margin-bottom: 6px;
+    }
+    &__error {
+        color: red;
+        margin-bottom: 6px;
+    }
+    &__input__error {
+        & input, textarea {
+            border-color: red;
+        }
+    }
+    &__checkWrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    &__checkTitle {
+        display: flex;
+        align-items: center;
+        &__link {
+            margin-left: 6px;
+            color: $color;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__check {
+        width: 20px;
+        height: 20px;
+        border: 1px solid $color;
+        cursor: pointer;
+        margin-right: 12px;
+        &__active {
+            background-color: $color;
+        }
+    }
+}
+
+.answer {
+    &__title {
+        font-weight: 500;
+        border-bottom: 2px solid #ccc;
+        margin-bottom: 6px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        border-bottom: 1px solid #ccc;
+        &__value {
+            display: flex;
+            align-items: center;
+        }
+        &__btns {
+            display: flex;
+            align-items: center;
+            color: $headAdminColor;
+            &__icon {
+                margin: 0 3px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.test {
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        border-bottom: 1px solid #ccc;
+        &__value {
+            display: flex;
+            align-items: center;
+        }
+        &__btns {
+            display: flex;
+            align-items: center;
+            color: $headAdminColor;
+            &__icon {
+                margin: 0 3px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import "./general-global.module.scss";
+
+$bgSiteVideoFirst: rgba(0,0,0,0.8);
+$colorSiteSub: #124B66;
+$colorLight: #fff;
+$bgColorSite: $globalBgColor;
+$bgSiteSecondColor: #F7F7F7;
+//BUTTON
+$colorSiteBtnMain: #fff;
+$bgSiteBtnMain: linear-gradient(95.66deg,#0e5169 -4.77%,#07bed7 32.56%,#07bed7 72.29%,#0e5169 110.81%);
+$colorSiteBtnSub: rgba(5, 84, 121, 1);
+$bgSiteBtnSub: #fff;
+//FIRSTSECTION
+$colorSiteFirstTitle: linear-gradient(180deg,#fff 24.46%,#27dce8 82.92%);
+$colorSiteFirstTitleBefore: #fff;
+$colorSiteFirstSubtitle: #fff;
+$widthFirstImg: 100%;
+$widthFirstBody: 50%;
+$widthFirstImageBlock: 50%;
+//TITLE SECTION
+$colorSiteTitleMain: $colorSiteMain;
+$colorSiteTitleMainLight: #fff;
+$colorSiteTitleSub: rgba(0, 177, 255, 0.15);
+$colorSiteTitleSubLight: rgba(144, 151, 152, 0.23);
+//SUBTITLE
+$colorSiteSubtitle: #124B66;
+//SALES
+$colorSales: #fff;
+//ACTIVITY
+$bgSiteActivityCard: #fff;
+//WORRIES
+$colorSiteWorries: #fff;
+$colorSiteWorriesItem: #fff;
+$colorSiteWorriesLine1: #007B74;
+$colorSiteWorriesLine2: #00A9A9;
+//WARRANTY
+$colorSiteWarrantyCard: #fff;
+//SUBSCRIBTION
+$bgSiteSubscCardColor: rgba(15, 21, 27, 0.95);
+$colorSiteMaxPrice: rgba(132, 148, 149, 0.9);
+$colorSiteLowPrice: #83EEF3;
+$bgSiteBtnPay: #fff;
+$colorSitebtnPay: #055479;
+$colorSiteSubscBorder: #E1EBFF;
+$colorSiteSubscBorderHover: #5C93FF;
+//EXPERT
+$colorSiteNameExpert: linear-gradient(180deg, #0B485E 0%, #00F3FF 40.1%, #00F3FF 65.62%, #0B485E 96.87%);
+$colorSiteExpert: #fff;
+$sizePhotoExpert: 100%;
+//START
+$colorSiteInput: #fff;
+$colorSiteInputHover: rgba(202, 214, 199, 1);
+//MODAL PAY
+$bgColorSiteModalPay: #fff;
+$colorSiteModalPay: #005984;

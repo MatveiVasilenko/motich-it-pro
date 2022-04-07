@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap');
+@font-face {
+  font-family: "Da Street";
+  src:  url("./fonts/Da_Streets.ttf") format("truetype"),
+        url("./fonts/Da_Streets.otf") format("otf"),
+        url("./fonts/Da_Streets.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+input::-moz-placeholder {
+  color: rgba(246, 246, 246, 0.6); /* Цвет подсказывающего текста */
+ }
+input::-webkit-input-placeholder { color: rgba(246, 246, 246, 0.6); }
+input:-ms-input-placeholder { color: rgba(246, 246, 246, 0.6); }
+input::-ms-input-placeholder { color: rgba(246, 246, 246, 0.6); }
+input::placeholder { color: rgba(246, 246, 246, 0.6); } 
+.video {
+  font-size: 18px;
+}
+.video-description {
+  font-weight: 500;
+  color: rgba(8, 83, 83, 1);
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+.video-title {
+  font-weight: 500;
+  color: rgba(7, 149, 215, 1);
+  font-size: 24px;
+  margin: 20px 0 6px 0;
+  border-bottom: 1px solid #c4c4c4;
+}
+.form-control {    
+    font-family: 'Montserrat';
+    outline: none;
+    border: none;
+    width: 460px;
+    height: 50px;
+    background: transparent !important;
+    font-size: 22px;
+    padding: 5px 10px 5px 50px;
+    text-align: left;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 16px;
+    transition: 0.1s all linear;
+    /* &:hover {
+        border-color: rgba(0,0,0,0.2);
+    }
+    &:focus {
+        border-color: $colorSiteInputHover;
+    } */
+ 
+}
+.form-control::focus {
+  outline-color: #1199B1;
+
+}
+.special-label {
+  display: none;
+}
+.gradient {
+  background: linear-gradient(180deg, rgba(246, 246, 246, 1) 24.46%, #27DCE8 82.92%);
+  -webkit-background-clip: text; /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* Прозрачный текст */
+}
+.fw500 {
+  font-weight: 500;
+}
+.hiddenBody {
+  overflow: hidden !important;
+}
+/* Youtube hide */
+.html5-video-player a {
+  display: none !important;
+}
+.slick-cloned {
+  display: none !important;
+}
+@media screen and (max-width: 1700px) {
+  
+}
+
+@media screen and (max-width: 1366px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  .form-control { 
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .form-control {
+    width: 100%;
+    font-size: 18px;
+    padding: 12px 5px 12px 45px;
+    margin-bottom: 6px;
+  }
+}
+

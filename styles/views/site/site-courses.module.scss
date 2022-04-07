@@ -1,0 +1,22 @@
+.courses {
+    &__btn {
+        text-align: center;
+    }
+    &__slider {
+        margin-bottom: 24px;
+        &__item {
+            padding-right: 12px;
+            cursor: pointer;    
+            & img {
+                width: 100%;
+                transition: $transition;
+                &:hover {
+                    filter: saturate(3);
+                }
+            }
+        }
+        &__btn {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,226 @@
+@import './../global.module.scss';
+
+.refferalHead {
+    display: flex;
+    align-items: center;
+    color: $colorLight;
+}
+.refferalHeadItem {
+    padding: 12px;
+    background: $colorLight;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.refferalHeadItemText {
+    color: $colorMain;
+    text-align: center;
+    font-size: 22px;
+}
+.refferalHeadItemNumber {
+    color: $colorTrack;
+    // text-shadow: 0px 3px 4px rgba(118, 110, 170, 0.77);
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+}
+.itemPartner {
+    width: 230px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(181.21deg, #0E103D -10.46%, rgba(16, 18, 69, 0.37) 21.39%, rgba(117, 28, 76, 0.56) 73.04%, rgba(162, 9, 64, 0.7) 98.81%);
+    border: 2px solid $colorLight;
+    border-radius: 8px;
+    padding: 12px;
+    margin-right: 16px;
+}
+.itemUserWrapper {
+    width: 430px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(181.21deg, #0E103D -10.46%, rgba(16, 18, 69, 0.37) 21.39%, rgba(117, 28, 76, 0.56) 73.04%, rgba(162, 9, 64, 0.7) 98.81%);
+    border: 2px solid $colorLight;
+    border-radius: 8px;
+    padding: 12px;
+    margin-right: 16px;
+}
+.refferalBodyWrapper {
+    display: flex;
+    color: $colorLight;
+}
+.refferalBodyLine {
+    margin-bottom: 30px;
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    align-items: center;
+    min-height: 120px;
+}
+.refferalBodyLevel {
+    padding: 0 30px;
+    border-right: 2px solid $colorLight;
+    margin-right: 20px;
+}
+.refferalBodyLevelItem {
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.itemUser {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: $colorLight;
+    margin: 25px 0;
+}
+.refferalBodyLineWrapper {
+    width: 100%;
+}
+//MOBILE
+.refferalHeadMob {
+    height: 65px;
+    background: $backgroundMenu;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% + 24px);
+    margin-left: -12px;
+    margin-top: -10px;
+}
+.refferalHeadItemMob {
+    background: $backgroundMenuItem;
+    border: 1px solid $colorMain;
+    fill: $colorLight;
+    // stroke: $colorLight;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.refferalHeadItemWrapperMob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+}
+.refferalHeadItemSvgMob {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-50%);
+}
+.refferalHeadItemTextMob {
+    font-size: 12px;
+    color: $colorLight;
+}
+.refferalHeadItemNumberMob {
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #FDFFA6 0%, #FF7A00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.refferalInfo {
+    width: 100px;
+    height: 100px;
+    background: $colorLight;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.refferalInfoWindow {
+    width: 300px;
+    padding: 12px;
+    border-radius: 12px;
+    background: $colorLight;
+    position: absolute;
+    left: -310px;
+    top: 0;
+    opacity: 0;
+    box-shadow: $boxShadow;
+    color: $colorMain;
+    transition: $transition;
+}
+.refferalInfoWindow p {
+    text-indent: 25px;
+}
+.refferalInfoWindowActive {
+    opacity: 1;
+}
+.refferalInfoMobile {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    background: $colorLight;
+    color: $colorMain;
+    margin-top: 12px;
+}
+.refferalInfoMobile p {
+    margin: 0;
+    margin-bottom: 12px;
+    text-indent: 25px;
+}
+@media screen and (max-width: 1700px) {
+    
+}
+@media screen and (max-width: 1500px) {
+    
+}
+@media screen and (max-width: 1366px) {
+    
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 576px) {
+    .refferalBodyLevel {
+        padding: 0 8px;
+        margin-right: 12px;
+    }
+    .refferalBodyLevelItem {
+        height: 90px;
+    }
+    .itemPartner {
+        min-width: 150px;
+        width: 150px;
+        text-align: center;
+        height: 90px;
+    }
+    .refferalBodyLine {
+        min-height: 90px;
+    }
+    .refferalBodyLineWrapper {
+        width: fit-content;
+        overflow-x: auto;
+    }
+    .title {
+        font-size: 32px;
+        margin: 18px 0;
+    }
+    .itemUserWrapper {
+        height: 90px;
+    }
+}

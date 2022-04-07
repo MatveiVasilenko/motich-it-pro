@@ -1,0 +1,17 @@
+//FONT_FAMILY
+$fontFamily: 'Montserrat', sans-serif;
+$fontFamilySub: 'Roboto Condensed', sans-serif;
+$fontFamilyHead: 'Da Street';
+//LOGO
+$widthLogo: 200px;
+$widthLogoMobile: 120px;
+//APP_SETTING
+$transition: 0.1s all linear;
+//PADDING
+$padding: 24px;
+//GLOBAL COLOR
+//Главный цвет проекта в меню, текст на сайте и т.д.
+$colorSiteMain: rgba(43, 43, 43, 0.9);
+//Цвет для темных фонов в сайте, карточек подписки
+$globalBgColor: linear-gradient(180deg, #00101C 6.25%, #14121C 50.52%, #030A0F 92.19%, #00080D 100%);
+$globalColor: #fff;

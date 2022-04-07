@@ -1,0 +1,303 @@
+@import './../global.module.scss';
+
+.modulesBody {
+    width: 60%;
+}
+.wrapper {
+    // display: flex;
+}
+.videoWrapper {
+    position: relative;
+    height: 600px;
+    &__hide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+    }
+}
+.videoNotTime {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: $colorMain;
+}
+.desc {
+    &__title {
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    &__subtitle {
+        font-size: 14px;
+        font-style: italic;
+        margin-bottom: 12px;
+    }
+    &__tag {
+        display: flex;
+        margin-bottom: 12px;
+        color: $colorSub;
+        &__item {
+            margin-right: 6px;
+        }
+    }
+    &__desc {
+        padding: 12px 12px 12px 60px;
+    }
+}
+.headDescVideo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__logo {
+            width: 50px;
+            height: 50px;
+            background: rgba(149, 179, 179, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            padding: 5px;
+            margin-right: 12px;
+            & img {
+                width: 100%;
+            }
+        }
+        &__title {
+            font-size: 24px;
+            color: $colorSub;
+        }
+    }    
+}
+.blockVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    &__title {
+        padding: 12px 0;
+    }
+}
+.likes {
+    display: flex;
+    align-items: center;
+    &__icon {
+        margin-right: 8px;
+        cursor: pointer;
+        & svg {
+            height: 30px;
+            fill: none;
+            stroke: $colorMain;
+        }
+        &_active {
+            & svg {
+                fill: $colorMain;
+            }
+        }
+    }
+}
+.tests {
+    &__item {
+        margin-bottom: 12px;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        color: $colorMain;
+        margin-bottom: 16px;
+    }
+    &__quiz {
+        font-size: 18px;
+        color: $colorMain;
+        margin-bottom: 12px;
+    }
+    &__answer {
+        margin-bottom: 6px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        &__radio {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        &__label {
+            flex: 1;
+            cursor: pointer;
+            padding-left: 12px;
+            &:hover {
+                color: $colorMain;
+            }
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+    }
+}
+.result {
+    &__title {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    &__quiz {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    &__body {
+        margin-bottom: 12px;
+    }
+    &__answer {
+        font-size: 18px;
+        margin-bottom: 6px;
+        border-radius: 5px;
+        padding: 5px 15px;
+        &_true {
+            background: #9FE4A2;
+        }
+        &_false {
+            background: #F88484;
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+        border-radius: 5px;
+        background: $headerColor;
+        color: $colorMenu;
+        &__right {
+            font-size: 20px;
+            color: $colorMain;
+
+        }
+        &__money {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            &__text {
+                // margin-right: 6px;
+                white-space: nowrap;
+            }
+            &__number {
+                font-weight: 500;
+                padding: 0 10px;
+                font-size: 22px;
+            }
+            &__svg {
+                & svg {
+                    height: 30px;
+                }
+            }
+        }
+        &__end {
+            font-size: 18px;
+            padding: 12px 0;
+        }
+    }
+}
+@media screen and (max-width: 1700px) {
+    .desc {
+        &__title {
+            font-size: 28px;
+            font-weight: 500;
+        }
+        &__tag {
+            display: flex;
+            margin-bottom: 12px;
+            &__item {
+                margin-right: 6px;
+            }
+        }
+    }
+    .videoWrapper {
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .videoWrapper {
+        height: 450px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .videoWrapper {
+        height: 350px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .desc {
+        &__title {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+        &__desc {
+            padding: 12px 0;
+        }
+    }
+    .headDescVideo {
+        flex-wrap: wrap;
+        &__head {
+            width: 100%;
+            &__btn {
+                margin: 6px auto;
+            }
+        }
+    }
+    .result {
+        &__footer {
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            &__right {
+                width: 100%;
+                color: $colorMenu;
+            }
+            &__money {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+    .tests {
+        &__title {
+            font-size: 22px;
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .modulesHead {
+        
+        &__Title {
+            font-size: 22px;
+            padding: 0 12px;
+        }
+    }
+    .modules {
+        flex-wrap: wrap;
+    }
+    .modulesBody {
+        width: 100%;
+    }
+    .modulesLisp {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 12px;
+    }
+    .videoWrapper {
+        height: 250px;
+    }
+}

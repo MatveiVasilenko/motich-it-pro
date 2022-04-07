@@ -1,0 +1,24 @@
+.ui {
+    &_btn {
+        background: $bgSiteBtnMain;
+        color: $colorSiteBtnMain;
+        padding: 12px 20px;
+        text-align: center;
+        font-weight: 500;
+        // border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: $transition;
+        &:hover {
+            box-shadow: 0 0 4px 4px rgba(0,0,0,0.25);
+        }
+        &_content {
+            width: fit-content;
+        }
+    }
+}
+.grid {
+    &__wrapper {
+        width: fit-content;
+    }
+}

@@ -1,0 +1,17 @@
+@import './../../global.module.scss';
+
+.wrapper {
+    color: $colorMain;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 12px;
+    color: $colorGraySecond;
+    transition: $transition;
+    &:hover {
+        color: $colorMain;
+    }
+    &__triangle {
+        margin-right: 6px;
+        transform: rotateZ(180deg) translateY(4px);
+    }
+}

@@ -1,0 +1,43 @@
+@import "./general-global.module.scss";
+
+$bgColorOffice: transparent;
+//Фоны для второстепенной секции
+$bgColorLightOffice: #F2F2F2;
+//Фон для меню общий
+$headerColor: linear-gradient(270.2deg,#085353 21.31%,rgba(8,83,83,0) 101.35%);
+$headerColorMobile: linear-gradient(270.2deg, #085353 30.31%, rgba(8, 83, 83, 0) 160.35%);
+$bottomColorMobile: #085353; //new
+$colorBottomMenu: #fff; //new
+$colorMenu: #fff;
+$colorBurger: #fff;
+// Общие стили для офиса
+// $bgAdminMain: url('./../../project/image/landing.jpg');
+$bgAdminMain: #f7f7f7;
+$colorAdminMain: rgba(0, 70, 58, 1);
+// Цвета
+$colorMain: rgba(8, 83, 83, 1);
+$colorSub: rgba(7, 149, 215, 1);
+$colorLight: #fff;
+$colorLigthSub: #f4f4f4;
+$colorDark: #000A09;
+$colorGray: #BFC0D6;
+$colorGraySecond: rgba(143, 143, 143, 1);
+$colorError: #cd0f32;
+$colorLightDisabled: rgba(154, 144, 184, 0.26);
+$colorText: #000;
+$colorBtnSub: #085353;
+$colorContactsTitle: #092E40;
+$boxShadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.4);
+$boxShadowModal: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+//Footer
+$colorFooter: #fff;
+$bgOfficeFooter: $globalBgColor;
+
+// Не используются
+$colorTrack: #A01739;
+$gradientMain: linear-gradient(13deg, #0E103D 25.99%, #0E103D 40.64%, #370C21 59.81%, #881531 77.66%, #A90F35 90.64%);
+$gradientSub: linear-gradient(89.59deg, #0E103D 25.06%, #35386B 44.03%, #766EAA 62.65%, #BFC0D6 81.28%, #FFFFFF 91.52%);
+$gradientThird: linear-gradient(90deg, #FFB800 0%, rgba(255, 219, 92, 0.640625) 43.83%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+$gradientFour: linear-gradient(90deg, #A01739 0%, rgba(231, 12, 52, 0.66) 28.13%, rgba(255, 219, 92, 0.640625) 63.02%, rgba(255, 255, 255, 1) 100%);
+$backgroundMenu: linear-gradient(180.94deg, #0E103D -31.53%, rgba(16, 18, 69, 1) 6.35%, rgba(89, 20, 57, 1) 55.93%, rgba(139, 17, 69, 1) 87.75%, rgba(205, 15, 50, 1) 108.65%);
+$backgroundMenuItem: rgba(255, 255, 255, 0.07);
